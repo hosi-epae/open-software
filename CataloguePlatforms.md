@@ -6,15 +6,30 @@
 
 **Management**
 - Plans
-  - ARGOS/OpenDMP: https://code-repo.d4science.org/MaDgiK-CITE/argos 
+  - Software Management Wizard: https://smw.ds-wizard.org/
 - Platforms
   - RO-Hub: https://github.com/rohub 
 
+**Registry**
+- bio.tools: https://bio.tools/
+- WorkflowHub: https://workflowhub.eu/
+
+**Infrastructures**
+- JupyterLabs: https://github.com/jupyterlab/jupyterlab
+- helix: https://hellenicdataservice.gr/main/
+
+**Repositories**
+- GitLab (self hosted, code+docker): https://about.gitlab.com/
+- GitHub (managed services): https://github.com/
+- bitbucket: https://bitbucket.org/product
+
+
 **Preserving**  
-- DSpace:https://github.com/DSpace  
+- DSpace: https://github.com/DSpace  
 - Dataverse: https://github.com/IQSS/dataverse 
-- Invenio: https://github.com/inveniosoftware/invenio 
-- CKAN: https://github.com/ckan/ckan 
+- Invenio: https://github.com/inveniosoftware/invenio, https://inveniosoftware.org/products/framework/
+- CKAN: https://github.com/ckan/ckan
+- Zenodo: https://zenodo.org/
 - Software Heritage: https://github.com/SoftwareHeritage 
 
 **Processing & Analysis**  
@@ -24,11 +39,18 @@
 - Reana: https://github.com/reanahub/reana 
 - Amnesia: https://github.com/dTsitsigkos/Amnesia 
 
+**Workflow standards**
+- snakemake: https://snakemake.readthedocs.io/en/stable/
+- cwl: https://www.commonwl.org/
+- nextflow: https://www.nextflow.io/
+
 **Assessing**  
 - FAIR
+  - Software Observatory: https://openebench.bsc.es/observatory/
   - FAIR Maturity Model: https://github.com/rd-alliance/FAIR-data-maturity-model-WG 
   - F-UJI: https://github.com/pangaea-data-publisher/fuji 
   - FAIR Evaluator: https://github.com/FAIRsharing/FAIR-Evaluator-FrontEnd 
+
 - Impact
   - Bip!Finder: https://github.com/schatzopoulos/bip-finder-api 
 
@@ -42,5 +64,5 @@
 - Metadata: https://github.com/rd-alliance/metadata-catalog-v2 
 
 **Licensing**  
-- Creative Commons: https://github.com/creativecommons/.github 
+- Software Package Data Exchange (SPDX): https://spdx.dev/
 - LCT: https://lct.ni4os.eu 
