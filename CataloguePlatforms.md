@@ -6,7 +6,7 @@
 
 **Management**
 - Plans
-  - Software Management Wizard: https://smw.ds-wizard.org/
+  - Software Management Plan: https://biohackrxiv.org/k8znb/ (an implementation available through the SMW https://smw.ds-wizard.org/)
 - Platforms
   - RO-Hub: https://github.com/rohub 
 
