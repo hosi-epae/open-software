@@ -23,6 +23,85 @@ Examples of public managed services include:
   https://savannah.gnu.org
 
 
+## Preservation
+
+We consider two aspects of software preservation: on the one hand
+preserving the source code of the software as a text that can be
+inspected, copied from, and re-used in different projects;
+and on the other hand preseving the software as a complete tool
+that can be executed to reproduce results.
+
+### Source code
+
+Preseving the source code without the requirement that it can be
+compiled and executed is not unlike preserving and other binary data:
+the source code needs to be made available at a persistent repository,
+ideally with versioning, with the guarantee that the same
+software/version identifier will always refer to the exact same source
+code.
+
+This fuctionality can, to some extend, be offered by SCM systems
+themselves as they serve tarballs of tagged versions. However,
+repository tags are revokable and the same tag can be made to point to
+a different point in the repository's history; furthermore
+repositories can be renamed, moved to a different SCM service, or
+removed altogether. For these reasons, it is advisable that source
+code tarballs of specific importance (e.g., the version used to
+process data and derive published results) are also deposited at a
+repository of the same kind as those used for articles or datasets.
+
+Again, these can be either self-hosted at an organization or public
+managed services. Some of the latter (like Zenodo) have the advantage
+that they refuse to take down or alter artefacts once they have been
+published and assigned a persistent identifier.
+
+Examples of open-source suites for self-hosting include:
+- DSpace: https://github.com/DSpace  
+- Invenio, the software used for Zenodo:
+  https://github.com/inveniosoftware
+- CKAN: https://github.com/ckan
+- Dataverse: https://github.com/IQSS/dataverse 
+- Software Heritage: https://github.com/SoftwareHeritage 
+
+Examples of managed services include:
+- Zenodo public service: https://zenodo.org
+- Software Heritage: https://softwareheritage.org
+- Academic publishers that offer the option to archive
+  supplementary material
+
+
+### Executable Software
+
+Software depends on its build environment (kernel, libraries,
+compiler), and as the environment evolves software must be maintained
+or it will soon become impossible to build and execute.
+
+There are various efforts to create dependency-free packages of the
+complete environment so that unmaintained software can be executed in
+virtualized copies of obsolete environments.
+
+Examples include lightweight virtualization environments of varying
+specificity:
+- Python Virtual Environments bundle all dependencies either as
+  references or as downloaded and installed environments that
+  no longer rely on PyPI:
+  https://docs.python.org/3/library/venv.html
+- Reana, for porting applications for the usual scientific workflow
+  managers (CWL, snakemake) to the usual K8s/Docker/Ceph Cloud
+  environment: https://www.reana.io
+- Docker containers for virtualizing Linux-based build and execution
+  environments: https://docker.com
+
+Naturally, all these depend on some minimal maintenance, as the core
+environment (Python installation, Linux kernal, etc.) is not bundled.
+The most future-proof option is to archive disk images of
+Virtual Machines that contain the complete environment of the
+software, although even this depends on the existence of hypervisors
+that are able to create appliances (VMs) from the specific image
+format.
+  
+
+
 **Publishing**  
 - OJS: https://github.com/pkp/ojs
 - EpiSciences: https://github.com/CCSDForge/episciences  
@@ -42,25 +121,10 @@ Examples of public managed services include:
 - helix: https://hellenicdataservice.gr/main/
 
 
-**Preserving**  
-- DSpace: https://github.com/DSpace  
-- Dataverse: https://github.com/IQSS/dataverse 
-- Invenio: https://github.com/inveniosoftware/invenio, https://inveniosoftware.org/products/framework/
-- CKAN: https://github.com/ckan/ckan
-- Zenodo: https://zenodo.org/
-- Software Heritage: https://github.com/SoftwareHeritage 
-
 **Processing & Analysis**  
 - Jupyter Notebooks: https://github.com/jupyter/notebook 
 - OpenRefine:https://github.com/OpenRefine/OpenRefine 
-- R: https://github.com/RConsortium 
-- Reana: https://github.com/reanahub/reana 
 - Amnesia: https://github.com/dTsitsigkos/Amnesia 
-
-**Workflow standards**
-- snakemake: https://snakemake.readthedocs.io/en/stable/
-- cwl: https://www.commonwl.org/
-- nextflow: https://www.nextflow.io/
 
 **Assessing**  
 - FAIR
